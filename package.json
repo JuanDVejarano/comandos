@@ -1,0 +1,27 @@
+{
+  "name": "dependencias-npm",
+  "version": "1.0.0",
+  "description": "Bases de npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanDVejarano/dependencias-npm.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "js",
+    "javaScript",
+    "dependencias",
+    "npm"
+  ],
+  "author": "JuanDVejarano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanDVejarano/dependencias-npm/issues"
+  },
+  "homepage": "https://github.com/JuanDVejarano/dependencias-npm#readme"
+}
