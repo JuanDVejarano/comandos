@@ -1,6 +1,6 @@
-# Conceptos de NPM y Node.js
+# Readme con comandos de npm, git, y comandos de consola en ubuntu
 
-# Que es npm?
+# NPM
 
 Es un gestor de paquetes para node.js, que nos permite instalar paquetes de terceros, crear nuestros propios paquetes y compartirlos con la comunidad.
 
@@ -127,6 +127,7 @@ Esta dependencia me permite crear un servidor local para mi proyecto.
 npm install gh-pages
 ```
 
+Esta dependencia me permite publicar mi proyecto en github pages.
 )
 
 {} [Ejemplo 3](
@@ -135,10 +136,39 @@ npm install gh-pages
 npm install -g sass
 ```
 
+Esta dependencia me permite compilar sass a css.
 )
 
-{} [Ejemplo 4](
+## scripts de npm
+
+Los scripts de npm nos permiten ejecutar comandos de consola desde el package.json
+
+en este proyecto tenemos el siguiente script a manera de ejemplo:
 
 ```bash
+npm run start
+```
 
+nos correra el programa en consola.
+
+puede crear n cantidad de scripts y se veran en el archivo package.json
+
+```bash
+"scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+```
+
+se pueden ejecutar varios comados en un mismo script, solo se separan por &&
+
+```bash
+"scripts": {
+    "dev": "node ./src/index.js && echo \"Hola mundo\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+```
+
+```bash
+npm run dev
 ```
