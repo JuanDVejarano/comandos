@@ -102,6 +102,44 @@ npm list -g
 
 Este comando me listara en consola las dependencias globales que tengo instaladas en mi proyecto.
 
+### actualizar dependencias
+
+1. **Ver estado y versiones de dependencias**
+
+```bash
+npm outdated
+```
+
+Este comando me muestra en consola el estado de las dependencias, es decir, si hay una version mas reciente de la dependencia que tengo instalada.
+
+2. **Actualizar dependencias**
+
+```bash
+npm install <nombre de la dependencia>@latest
+```
+
+Este comando me actualiza la dependencia a la ultima version disponible.
+
+3. **auditoria de dependencias**
+
+```bash
+npm audit
+```
+
+Este comando me muestra en consola si hay dependencias con vulnerabilidades.Kii
+
+```bash
+npm audit fix
+```
+
+Este comando me permite corregir las vulnerabilidades de las dependencias.
+
+```bash
+npm audit fix --force
+```
+
+Este comando me permite corregir las vulnerabilidades de las dependencias, pero si hay alguna dependencia que no se puede corregir, la va a eliminar.
+
 ### npm uninstall
 
 ```bash
