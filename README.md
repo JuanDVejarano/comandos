@@ -52,7 +52,16 @@ npm install --save-dev <nombre de la dependencia>
 
 Estos 2 comandos hacen lo mismo, instalan la dependencia pero la guardan en el package.json como dependencia de desarrollo.
 
-4. **Instalacion de dependencias globales**
+4. **Instalacion de dependencias opcionales**
+
+```bash
+npm install -O <nombre de la dependencia>
+npm install --save-optional <nombre de la dependencia>
+```
+
+Estos 2 comandos hacen lo mismo, instalan la dependencia pero la guardan en el package.json como dependencia opcional.
+
+5. **Instalacion de dependencias globales**
 
 ```bash
 npm install -g <nombre de la dependencia>
@@ -60,7 +69,7 @@ npm install -g <nombre de la dependencia>
 
 Este comando instala la dependencia de forma global, es decir, que la dependencia se va a instalar en la carpeta de node_modules de nuestro sistema operativo.
 
-5. **simular instalacion de dependencias**
+6. **simular instalacion de dependencias**
 
 ```bash
 npm install --dry-run
@@ -68,7 +77,7 @@ npm install --dry-run
 
 Este comando nos permite simular la instalacion de dependencias, es decir, que no se instalan las dependencias, pero nos muestra en consola que dependencias se instalarian. para evitar errores o poder ver en consola.
 
-6. **instalar version especifica de una dependencia**
+7. **instalar version especifica de una dependencia**
 
 ```bash
 npm install <nombre de la dependencia>@<version>
@@ -147,6 +156,28 @@ npm uninstall <nombre de la dependencia>
 ```
 
 Este comando nos permite desinstalar una dependencia.
+
+## Subir paquetes a npm
+
+1. **Crear cuenta en npm**
+
+2. npm link
+
+```bash
+npm link
+```
+
+Este comando nos permite subir nuestro paquete a npm de manera local, para que otras personas puedan instalarlo.
+
+3. loguearse en consola
+
+```bash
+  npm adduser
+  npm login
+```
+
+En ocaciones pude el comadno sudo antes de npm, para que nos de permisos de administrador.
+estos comandos te van a pedir tu usuario y contraseña de npm. desde le navegado.
 
 ## Ejemplo de dependencias
 
